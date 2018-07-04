@@ -2,13 +2,6 @@
 
 node {
 
-stage
-('Checkout') {
-
-checkout([$class: 'GitSCM', branches: [[name: '*/new-feature'], doGenerateSubmoduleConfigurations: false, extensions: [], gitTool: 'Git ', submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/mchoang/JenkinsRepository.git']]])
-
-}
-
      stage ('Hallo') {
           echo "1"
      }
