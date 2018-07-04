@@ -9,15 +9,22 @@ checkout([$class: 'GitSCM', branches: [[name: '*/new-feature'], [name: '*/master
 
 }
 
-stage
-('Static Code Analysis') {
-
-     echo "Static Code Analysis"
+     stage ('Hallo') {
+          echo "1"
      }
-     stage ('Build')
-     { echo "Build the code"
+     stage ('das') {
+          echo "2"
      }
+     stage ('ist') {
+          echo "3"
      }
+     stage ('ein') {
+          echo "4"
+     }
+     stage ('Test') {
+          echo "4"
+     }
+}
 
 
 
